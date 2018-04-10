@@ -2,9 +2,6 @@ language: java
 cache:
   directories:
     - $HOME/.m2
-before_script:
-  - cd desapp-groupD-backend
-
 build:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
